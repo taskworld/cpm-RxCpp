@@ -125,6 +125,7 @@ set(PROJ_SOURCES
    ${PROJ_DIR}/Rx/v2/src/rxcpp/subjects/rx-synchronize.hpp
 )
 
-target_link_libraries(${CPM_LIB_TARGET_NAME} ${PROJ_SOURCES})
+include_directories(${PROJ_DIR}/Rx/v2/src/rxcpp)
+add_library(${CPM_LIB_TARGET_NAME} ${PROJ_SOURCES})
 
-CPM_ExportAdditionalIncludeDir("${PROJ_DIR}")
+CPM_ExportAdditionalIncludeDir("${PROJ_DIR}/Rx/v2/src/rxcpp")
