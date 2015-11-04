@@ -60,6 +60,7 @@ file (GLOB Sources
 #-----------------------------------------------------------------------
 
 # Build the library.
+include_directories(${PROJ_DIR}/Rx/v2/src)
 add_library(${CPM_LIB_TARGET_NAME} SHARED ${Sources})
 SET_TARGET_PROPERTIES(${CPM_LIB_TARGET_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 if (NOT EMSCRIPTEN AND CPM_LIBRARIES)
