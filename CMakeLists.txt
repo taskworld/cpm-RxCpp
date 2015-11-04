@@ -126,6 +126,6 @@ set(PROJ_SOURCES
 )
 
 include_directories(${PROJ_DIR}/Rx/v2/src/rxcpp)
-add_library(${CPM_LIB_TARGET_NAME} ${PROJ_SOURCES})
+add_library(${CPM_LIB_TARGET_NAME} STATIC ${PROJ_SOURCES})
 
 CPM_ExportAdditionalIncludeDir("${PROJ_DIR}/Rx/v2/src/rxcpp")
