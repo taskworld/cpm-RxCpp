@@ -41,7 +41,7 @@ set(PROJ_DIR ${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/RxCpp)
 CPM_EnsureRepoIsCurrent(
   TARGET_DIR ${PROJ_DIR}
   GIT_REPOSITORY "https://github.com/Reactive-Extensions/RxCpp"
-  GIT_TAG "v2.2.0"
+  GIT_TAG master
   USE_CACHING TRUE
   )
 
